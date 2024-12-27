@@ -1,0 +1,66 @@
+/* Off-Canvas Navigation */
+.off-canvas-nav {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Hide off-canvas menu initially */
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: left 0.3s ease;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.off-canvas-nav.open {
+  left: 0; /* Slide in the menu */
+}
+
+
+
+.off-canvas-nav .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.off-canvas-nav nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.off-canvas-nav nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-bottom: 1px solid #444;
+  transition: background-color 0.3s ease;
+}
+
+.off-canvas-nav nav a:hover {
+  background-color: #555;
+}
+
+/* Logout Button */
+.off-canvas-nav .logout-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 2px solid white; /* White border */
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.off-canvas-nav .logout-btn:hover {
+  background-color: white; /* White background on hover */
+  color: #333; /* Change text color on hover */
+}
+

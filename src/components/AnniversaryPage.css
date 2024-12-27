@@ -1,0 +1,62 @@
+/* Add styles for the page title */
+.page-title {
+    text-align: center; /* Center the title */
+    margin: 20px 0; /* Margin to add spacing around the title */
+    font-size: 2.5rem; /* Increase font size for more prominence */
+    color: #333; /* Dark text color */
+  }
+  
+  /* Add styles for the customization note */
+  .customization-note {
+    text-align: center; /* Center the note */
+    margin: 20px 0; 
+  }
+    /* Add styles for the page title */
+.page-title {
+    text-align: center; /* Center the title */
+    margin: 20px 0; /* Margin to add spacing around the title */
+    font-size: 2.5rem; /* Increase font size for more prominence */
+    color: #333; /* Dark text color */
+  }
+  
+  /* Grid container for images */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for a larger grid */
+    gap: 30px; /* Increase space between grid items */
+    padding: 20px; /* Padding around the grid */
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    min-height: 400px; /* Increase min height for better fit */
+  }
+  
+  /* Style individual grid items */
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 15px; /* Increase padding inside the grid item */
+    text-align: center; /* Center text inside each item */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 100%; /* Ensure grid items stretch to fill available width */
+    max-width: 250px; /* Increase max width for grid items */
+    overflow: hidden; /* Hide any overflow content */
+    position: relative; /* Position relative for the hover effect */
+  }
+  
+  /* Enforce consistent image size */
+  .grid-item img {
+    width: 100%; /* Ensure images take full width of grid item */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px; /* Rounded corners for images */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  /* Enlarge image when active */
+  .enlarged {
+    transform: scale(1.5); /* Enlarge image */
+    z-index: 10; /* Ensure the enlarged image is above other content */
+  }
+  

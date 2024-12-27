@@ -1,0 +1,54 @@
+.myorder-container {
+    padding: 20px;
+    max-width: 1000px; /* Adjust the width as needed */
+    margin: 0 auto;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0d76df;
+  }
+  
+  .order-summary {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Slightly rounded corners */
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .order-summary h3 {
+    margin-top: 0;
+    color: #444;
+  }
+  
+  .order-summary .order-item {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center; /* Align items vertically */
+  }
+  
+  .order-summary .label {
+    font-weight: bold;
+    color: #333;
+    flex: 1; /* Take up available space */
+  }
+  
+  .order-summary .value {
+    color: #666;
+    flex: 2; /* Allow the value to take up more space */
+  }
+  
+  .order-summary .order-item p {
+    margin: 0; /* Remove default margin */
+    font-size: 16px; /* Adjust font size for readability */
+  }
+  
+  .order-summary .order-item:last-child {
+    margin-bottom: 0; /* Remove margin from last item */
+  }
+  

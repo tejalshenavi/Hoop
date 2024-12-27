@@ -1,0 +1,120 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Header Styles */
+header {
+  background-color: #3498db;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+header h1 {
+  padding: 0 620px 0 610px;
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+/* Menu Button */
+.menu-btn {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background-color: #fff;
+  color: #3498db;
+  border: none;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.menu-btn:hover {
+  background-color: #ddd;
+}
+
+/* Main Content */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Home Page Grid Layout */
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+  align-items: center;
+  background-color: #fafafa;
+  border-radius: 15px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffebcd;
+  padding: 15px;
+  text-align: center;
+  border-radius: 12px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item:hover {
+  transform: translateY(-8px);
+  background-color:#89CFF0;
+}
+
+/* Customize Page */
+.customize-page {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .home-grid {
+    grid-template-columns: 1fr; /* Stack items on small screens */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .home-grid {
+    grid-template-columns: repeat(2, 1fr); /* Maintain 2x2 layout on tablets */
+  }
+}
+
+@media (min-width: 1025px) {
+  .home-grid {
+    grid-template-columns: repeat(2, 1fr); /* Keep 2x2 on larger screens */
+  }
+}
+

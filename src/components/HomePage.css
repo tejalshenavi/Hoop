@@ -1,0 +1,100 @@
+/* Home Wrapper */
+.home-wrapper {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f9; /* Light background */
+}
+
+/* Welcome Message Styling */
+.welcome-message {
+  font-size: 2.5rem;
+  color: #3498db; /* Bright blue color */
+  font-family: 'Georgia', serif;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  font-style: italic;
+}
+
+/* Grid Container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+  gap: 30px; /* Increased gap for better spacing */
+  padding: 20px;
+  justify-items: center;
+  align-items: center;
+  background-color: #ffffff; /* White background for a clean look */
+  border-radius: 15px;
+  max-width: 1200px;
+  margin: 0 auto; /* Centering the grid */
+}
+
+/* Grid Item */
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffebcd; /* Light beige background */
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Larger shadow for more depth */
+  max-width: 300px; /* Set a max-width for grid items */
+  width: 100%;
+}
+
+/* Grid Item Image */
+.grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Stronger shadow for images */
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.grid-item:hover img {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.grid-item:hover {
+  background-color: #89CFF0; /* Gold highlight on hover */
+  transform: translateY(-10px); /* Lift the item on hover */
+}
+
+.grid-item span {
+  font-size: 1.5rem;
+  color: #2c3e50; /* Dark text color */
+}
+
+/* Responsive Design */
+
+/* Tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Stack items in a single column */
+  }
+
+  .grid-item {
+    max-width: 100%; /* Full width for mobile screens */
+  }
+}
+
+/* Larger Screens */
+@media (min-width: 1025px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* Keep 2x2 for larger screens */
+  }
+}

@@ -1,0 +1,123 @@
+/* Auth Container Styling */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%); /* Gradient background */
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent scrollbars */
+  margin: 0; /* Remove default margin */
+}
+
+/* Auth Box */
+.auth-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  width: 100%;
+  max-width: 360px; /* Adjust width */
+  text-align: center;
+}
+
+/* Headings and Form */
+h2 {
+  margin-bottom: 15px;
+  color: #1e88e5; /* Bright blue */
+  font-size: 1.75rem; /* Heading font size */
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+}
+
+.sub-heading {
+  margin-bottom: 20px;
+  color: #666; /* Light gray */
+  font-size: 1rem; /* Sub-heading font size */
+  font-family: 'Arial', sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Space between elements */
+}
+
+/* Input Fields */
+input {
+  padding: 12px;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 8px;
+  font-size: 0.9rem; /* Input font size */
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #1e88e5; /* Blue outline on focus */
+}
+
+/* Auth Button */
+.auth-btn {
+  padding: 12px;
+  background-color: #1e88e5; /* Bright blue button */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem; /* Button font size */
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.auth-btn:hover {
+  background-color: #1565c0; /* Darker blue on hover */
+}
+
+/* Error Message */
+.error-message {
+  color: #e74c3c; /* Red color for errors */
+  font-size: 0.85rem; /* Error message font size */
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Loading Message */
+.loading-message {
+  color: #666; /* Gray color for loading */
+  font-size: 0.85rem; /* Loading message font size */
+  margin-top: 10px;
+}
+
+/* Paragraph and Links */
+p {
+  font-size: 0.85rem; /* Font size for paragraph */
+  color: #333; /* Dark gray color */
+}
+
+p a {
+  color: #1e88e5; /* Link color */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+  .auth-box {
+    padding: 20px;
+    max-width: 280px; /* Adjust width for smaller screens */
+  }
+
+  input {
+    padding: 10px;
+  }
+
+  .auth-btn {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
